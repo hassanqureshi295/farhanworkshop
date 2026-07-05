@@ -118,6 +118,7 @@
     position: relative;
     max-width: 680px;
     color: white;
+    margin-top: -35px;
   }
 
   .hero h1 {
@@ -129,6 +130,39 @@
     margin-top: 14px;
     color: #cbd5e1;
     margin-bottom: 10px
+  }
+
+  .hero-timing {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(6px);
+    color: #f1f5f9;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 999px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-timing-sep {
+    color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .hero-timing-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #4ade80;
+    box-shadow: 0 0 0 3px rgba(74, 222, 128, 0.25);
+    flex-shrink: 0;
+  }
+  
+  .hero-timing-dot.dot-closed {
+    background: #f87171;
+    box-shadow: 0 0 0 3px rgba(248, 113, 113, 0.25);
   }
 
   /* SECTION SYSTEM */
@@ -1287,3 +1321,196 @@ text-align:center;
     }
 
   }
+
+  .hero-timing {
+    font-size: 12px;
+    padding: 7px 14px;
+    flex-wrap: wrap;
+  }
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    align-items: stretch;
+  }
+  /* WORKSHOP TIMING + SOCIAL SECTION */
+.workshop-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+  height: 100%;
+}
+
+.timing-card,
+.social-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.timing-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+}
+
+.timing-card-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.timing-icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(239, 68, 68, 0.1);
+  border-radius: 12px;
+  font-size: 18px;
+}
+
+.timing-card-head h3 {
+  font-size: 18px;
+  color: var(--dark);
+}
+
+.timing-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px dashed var(--border);
+  gap: 10px;
+}
+
+.timing-row:last-of-type {
+  border-bottom: none;
+}
+
+.timing-row span {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.timing-row strong {
+  color: var(--dark);
+  font-size: 14px;
+  text-align: right;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-start;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  background: rgba(148, 163, 184, 0.15);
+  color: var(--muted);
+}
+
+.status-badge.open {
+  background: rgba(34, 197, 94, 0.12);
+  color: #16a34a;
+}
+
+.status-badge.closed {
+  background: rgba(239, 68, 68, 0.12);
+  color: #dc2626;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--muted);
+  flex-shrink: 0;
+}
+
+.status-dot.dot-open {
+  background: #22c55e;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.2);
+}
+
+.status-dot.dot-closed {
+  background: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
+}
+
+.social-card h3 {
+  font-size: 18px;
+  color: var(--dark);
+  margin-bottom: 6px;
+}
+
+.social-card p {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+  transition: 0.25s;
+  flex: 1;
+  justify-content: center;
+  min-width: 120px;
+}
+
+.social-icon:hover {
+  transform: translateY(-3px);
+}
+
+.social-icon.tiktok {
+  background: #000000;
+}
+
+.social-icon.instagram {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+}
+
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .map {
+    height: 300px;
+  }
+
+  .timing-card,
+  .social-card {
+    padding: 20px;
+  }
+
+  .social-icons {
+    flex-direction: column;
+  }
+
+  .social-icon {
+    width: 100%;
+  }
+}

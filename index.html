@@ -55,20 +55,7 @@
   </div>
   <div class="overlay" id="overlay"></div>
 
-  <!-- <div class="shop-banner">
-  <img src="banner.jpeg" alt="Farhan Mughal Auto Electrician Banner">
-</div> -->
-
   <!-- HERO -->
-  <!-- <div class="hero" id="home">
-    <div class="hero-content">
-      <h1>Precision Car Repair You Can Trust</h1>
-      <p>Honest service, expert mechanics, modern tools.</p>
-      <button class="btn"><a href="#contact" class="btn" style="text-decoration: none; color: white;">Contact
-          Us</a></button>
-    </div>
-  </div> -->
-
   <div class="hero" id="home">
     <div class="hero-content">
 
@@ -82,6 +69,13 @@
         Fast diagnostics, honest pricing, and professional repair work for all types of vehicles.
         Your car is fixed right the first time.
       </p>
+
+      <div class="hero-timing" id="heroTiming">
+        <span class="hero-timing-dot" id="heroTimingDot"></span>
+        <span id="heroTimingStatus">Open Now</span>
+        <span class="hero-timing-sep">•</span>
+        <span>9:00 AM - 9:00 PM</span>
+      </div>
 
       <div class="hero-buttons">
         <a href="#contact" class="btn primary">Book Appointment</a>
@@ -99,19 +93,27 @@
 
 
   <!-- SERVICES -->
+  <!-- SERVICES -->
   <section id="services">
     <h2 class="section-title">Services</h2>
     <div class="services">
 
       <div class="service-card">
-        <img class="service-img" src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc">
+        <img class="service-img" src="https://images.unsplash.com/photo-1625047509168-a7026f36de04">
         <div class="service-body">
-          <h3>Engine Repair</h3>
+          <h3>General Maintenance</h3>
         </div>
       </div>
 
       <div class="service-card">
-        <img class="service-img" src="https://images.unsplash.com/photo-1625047509168-a7026f36de04">
+        <img class="service-img" src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc">
+        <div class="service-body">
+          <h3>Mechanical & Auto Gear Repair</h3>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img class="service-img" src="https://images.unsplash.com/photo-1635784063504-13ff2160f551">
         <div class="service-body">
           <h3>Oil Change</h3>
         </div>
@@ -120,21 +122,14 @@
       <div class="service-card">
         <img class="service-img" src="https://images.unsplash.com/photo-1580273916550-e323be2ae537">
         <div class="service-body">
-          <h3>Auto Engine Diagnostic</h3>
+          <h3>Computerized Machinery Diagnostics</h3>
         </div>
       </div>
 
       <div class="service-card">
-        <img class="service-img" src="https://images.unsplash.com/photo-1580273916550-e323be2ae537">
+        <img class="service-img" src="https://images.unsplash.com/photo-1632823469850-2f77dd9c7f93">
         <div class="service-body">
-          <h3>Air & Cabin Filter Replacement</h3>
-        </div>
-      </div>
-
-      <div class="service-card">
-        <img class="service-img" src="https://images.unsplash.com/photo-1580273916550-e323be2ae537">
-        <div class="service-body">
-          <h3>Wheel Alignment</h3>
+          <h3>Auto Electrician Services</h3>
         </div>
       </div>
 
@@ -191,33 +186,33 @@
     <div class="problem-grid">
 
       <div class="problem-card">
-        <h3>🚗 Car Not Starting</h3>
-        <p>Battery, starter motor, or wiring issue diagnosis and repair.</p>
+        <h3>🛠️ Maintenance Issues</h3>
+        <p>Routine check-ups and preventive maintenance to keep your vehicle running smoothly.</p>
       </div>
 
       <div class="problem-card">
-        <h3>🔋 Battery Drain Issue</h3>
-        <p>Find hidden electrical leaks causing battery to discharge overnight.</p>
+        <h3>⚙️ Mechanical & Auto Gear Faults</h3>
+        <p>Gearbox, clutch, and mechanical drivetrain problems diagnosed and repaired properly.</p>
       </div>
 
       <div class="problem-card">
-        <h3>⚡ Wiring Problems</h3>
-        <p>Short circuits, broken wiring, and faulty connections fixed properly.</p>
+        <h3>🛢️ Oil & Fluid Problems</h3>
+        <p>Old, leaking, or low engine oil causing poor performance — changed and topped up correctly.</p>
       </div>
 
       <div class="problem-card">
-        <h3>💡 Lights Not Working</h3>
-        <p>Headlights, indicators, brake lights electrical troubleshooting.</p>
+        <h3>💻 Computerized Machinery Faults</h3>
+        <p>ECU and computerized system errors scanned and fixed using modern diagnostic tools.</p>
+      </div>
+
+      <div class="problem-card">
+        <h3>🔋 Electrical System Issues</h3>
+        <p>Battery drain, wiring faults, and lighting problems handled by our expert electrician.</p>
       </div>
 
       <div class="problem-card">
         <h3>🚨 Dashboard Warning Lights</h3>
         <p>Check engine light and sensor fault diagnosis using scanning tools.</p>
-      </div>
-
-      <div class="problem-card">
-        <h3>🔧 Alternator Issues</h3>
-        <p>Charging system testing and alternator repair or replacement.</p>
       </div>
 
     </div>
@@ -286,35 +281,6 @@
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
-  <!-- <section>
-    <h2 class="section-title">Google Reviews</h2>
-
-    <div class="testimonial-grid">
-
-      <div class="testimonial">
-        <div class="stars">★★★★★</div>
-        <p>I have been his client from last 3 years and alhumdulillah always had a satisfying work on my cars in such a
-          decent prices</p>
-        <b>Sheraz Shaukot</b>
-      </div>
-
-      <div class="testimonial">
-        <div class="stars">★★★★★</div>
-        <p>Very good electrician I have ever seen in my life.
-          Fast service and excellent work by him.</p>
-        <b>Hassan Ali</b>
-      </div>
-
-      <div class="testimonial">
-        <div class="stars">★★★★★</div>
-        <p>Best experience I’ve had with car repair.</p>
-        <b>Bilal Ahmed</b>
-      </div>
-
-    </div>
-  </section> -->
-
   <section id="reviews">
     <h2 class="section-title">What Customers Say</h2>
 
@@ -380,11 +346,54 @@
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
 
-      <div class="form">
-        <input placeholder="Name" />
-        <input placeholder="Phone" />
-        <textarea rows="4" placeholder="Message"></textarea>
-        <button class="btn">Send Message</button>
+      <div class="workshop-info">
+
+        <div class="timing-card">
+          <div class="timing-card-head">
+            <div class="timing-icon">🕒</div>
+            <h3>Workshop Timing</h3>
+          </div>
+
+          <div class="timing-row">
+            <span>Monday - Saturday</span>
+            <strong>9:00 AM - 9:00 PM</strong>
+          </div>
+          <div class="timing-row">
+            <span>Sunday</span>
+            <strong>Closed</strong>
+          </div>
+
+          <div class="status-badge" id="statusBadge">
+            <span class="status-dot" id="statusDot"></span>
+            <span id="statusText">Checking...</span>
+          </div>
+        </div>
+
+        <div class="social-card">
+          <h3>Follow Our Work</h3>
+          <p>See real repairs & workshop moments on our socials.</p>
+
+          <div class="social-icons">
+            <a href="https://www.tiktok.com/@farhanmughalautoelectrician" target="_blank" rel="noopener"
+              class="social-icon tiktok" aria-label="Follow us on TikTok">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                <path
+                  d="M16.6 5.82c-1.02-.88-1.66-2.18-1.66-3.62h-3.19v13.4c0 1.62-1.31 2.93-2.93 2.93a2.93 2.93 0 0 1 0-5.86c.29 0 .57.04.83.12V9.4a6.13 6.13 0 0 0-.83-.06 6.15 6.15 0 1 0 6.15 6.15V9.02a8.31 8.31 0 0 0 4.85 1.55V7.38a4.85 4.85 0 0 1-3.22-1.56z" />
+              </svg>
+              <span>TikTok</span>
+            </a>
+
+            <a href="https://www.instagram.com/farhanmughalautoelectrician" target="_blank" rel="noopener"
+              class="social-icon instagram" aria-label="Follow us on Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                <path
+                  d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.24 2.22.41.56.21.96.47 1.38.89.42.42.68.82.89 1.38.17.42.36 1.05.41 2.22.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.24 1.8-.41 2.22-.21.56-.47.96-.89 1.38-.42.42-.82.68-1.38.89-.42.17-1.05.36-2.22.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.24-2.22-.41-.56-.21-.96-.47-1.38-.89-.42-.42-.68-.82-.89-1.38-.17-.42-.36-1.05-.41-2.22-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.24-1.8.41-2.22.21-.56.47-.96.89-1.38.42-.42.82-.68 1.38-.89.42-.17 1.05-.36 2.22-.41 1.27-.06 1.65-.07 4.85-.07M12 0C8.74 0 8.33.01 7.05.07c-1.28.06-2.15.26-2.91.56-.79.31-1.46.72-2.13 1.38S.94 3.35.63 4.14c-.3.76-.5 1.63-.56 2.91C.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.28.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13s1.34 1.07 2.13 1.38c.76.3 1.63.5 2.91.56 1.28.06 1.69.07 4.95.07s3.67-.01 4.95-.07c1.28-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.13-1.38s1.07-1.34 1.38-2.13c.3-.76.5-1.63.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.28-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.38-2.13S20.65.94 19.86.63c-.76-.3-1.63-.5-2.91-.56C15.67.01 15.26 0 12 0zm0 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84zM12 16a4 4 0 1 1 4-4 4 4 0 0 1-4 4zm6.41-10.85a1.44 1.44 0 1 1-1.44-1.44 1.44 1.44 0 0 1 1.44 1.44z" />
+              </svg>
+              <span>Instagram</span>
+            </a>
+          </div>
+        </div>
+
       </div>
 
     </div>
@@ -406,9 +415,6 @@
         <p class="sub-text">
           Your Automotive Repair & Maintenance Service Specialist
         </p>
-        <!-- 
-      <a href="https://autoyard.pk/contact-us/" class="book-btn">
-      </a> -->
         <a href="tel:+923410576603" class="btn" style="text-decoration: none; color: white;">BOOK AN APPOINTMENT</a>
       </div>
 
@@ -556,8 +562,52 @@
     link.addEventListener("click", closeMenu);
   });
 
+  /* WORKSHOP OPEN/CLOSED STATUS */
+  function updateWorkshopStatus() {
+    const now = new Date();
+    const day = now.getDay(); // 0 = Sunday
+    const hour = now.getHours() + now.getMinutes() / 60;
+
+    const isOpen = day !== 0 && hour >= 9 && hour < 21;
+
+    const statusText = document.getElementById("statusText");
+    const statusDot = document.getElementById("statusDot");
+    const statusBadge = document.getElementById("statusBadge");
+    const heroStatus = document.getElementById("heroTimingStatus");
+    const heroDot = document.getElementById("heroTimingDot");
+
+    const label = isOpen ? "Open Now" : "Closed Now";
+
+    if (statusText) statusText.textContent = label;
+    if (heroStatus) heroStatus.textContent = label;
+
+    [statusDot, heroDot].forEach((dot) => {
+      if (!dot) return;
+      dot.classList.toggle("dot-open", isOpen);
+      dot.classList.toggle("dot-closed", !isOpen);
+    });
+
+    if (statusBadge) {
+      statusBadge.classList.toggle("open", isOpen);
+      statusBadge.classList.toggle("closed", !isOpen);
+    }
+  }
+
+  updateWorkshopStatus();
+  setInterval(updateWorkshopStatus, 60000);
+
+
+  const navbarEl = document.querySelector(".navbar");
+function handleNavScroll() {
+  if (window.scrollY > 40) {
+    navbarEl.classList.add("scrolled");
+  } else {
+    navbarEl.classList.remove("scrolled");
+  }
+}
+window.addEventListener("scroll", handleNavScroll, { passive: true });
+handleNavScroll();
+
 </script>
-
-
 
 </html>
